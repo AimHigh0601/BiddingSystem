@@ -1,0 +1,40 @@
+{
+  "name": "Bidding System",
+  "version": "1.0.0",
+  "description": "SocialWeb",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "nothing": "nothing",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Aboalnour Ahmed B",
+  "license": "AAB",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^3.6.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.7.5",
+    "nodemon": "^1.17.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-moment": "^0.8.3",
+    "validator": "^10.4.0",
+    "express-rate-limit": "^5.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
